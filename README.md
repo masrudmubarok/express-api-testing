@@ -13,19 +13,27 @@ This is a simple RESTful API built with Express.js and PostgreSQL, designed prim
 ## 🏗️ Project Structure
 
 ```
-├── src
-│   ├── controllers
-│   ├── models
-│   ├── routes
-│   ├── db.js
-│   └── app.js
-├── test
-│   ├── unit
-│   └── integration
+express-api-testing/
+│
+├── config/
+│   └── db.js
+├── controller/
+│   └── todo.controller.js
+├── model/
+│   └── db.js
+│   └── todo.model.js
+├── route/
+│   └── todo.routes.js
+├── tests/
+│   ├── unit/
+│   │   └── todo.model.test.js
+│   └── integration/
+│       └── todo.route.test.js
 ├── .env
-├── .env.test
+├── app.js
+├── server.js
 ├── jest.config.js
-└── server.js
+└── README.md
 ```
 
 ## 🧪 Testing Goals
@@ -62,7 +70,7 @@ PORT=3001
 You may set up tables manually or integrate with tools like `knex` or `sequelize`. For simplicity, assume you have a table like:
 
 ```sql
-CREATE TABLE items (
+CREATE TABLE todo (
   id SERIAL PRIMARY KEY,
   title TEXT NOT NULL,
   completed BOOLEAN DEFAULT false
@@ -99,18 +107,18 @@ npm test
 
 | Method | Endpoint      | Description          |
 |--------|---------------|----------------------|
-| GET    | /items        | Get all items        |
-| GET    | /items/:id    | Get item by ID       |
-| POST   | /items        | Create new item      |
-| PUT    | /items/:id    | Update item          |
-| DELETE | /items/:id    | Delete item          |
+| GET    | /todos        | Get all todos        |
+| GET    | /todos/:id    | Get todo by ID       |
+| POST   | /todos        | Create new todo      |
+| PUT    | /todos/:id    | Update todo          |
+| DELETE | /todos/:id    | Delete todo          |
 
 ## 🧪 Postman Testing
 
 You can test the API using [Postman](https://postman.com) by importing the following endpoints and sending requests to:
 
 ```
-http://localhost:3000/items
+http://localhost:3000/todos
 ```
 
 Make sure PostgreSQL is running and the correct DB is configured.
