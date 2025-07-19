@@ -91,7 +91,7 @@ describe('Todo Controller Unit (Mocked Model)', () => {
   });
 
   it('should delete todo', async () => {
-    model.deleteTodo.mockResolvedValue({ rowCount: 1 });
+    model.deleteTodo.mockResolvedValue({ rows: [{}], rowCount: 1 });
     const req = mockRequest({}, { id: 1 });
     const res = mockResponse();
     await controller.deleteTodo(req, res);
