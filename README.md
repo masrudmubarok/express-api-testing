@@ -106,28 +106,28 @@ npm test
 ## 🧪 Testing Commands
 
 ### Unit Test
-- Test unit untuk controller:
+- Run unit tests for controller:
   ```bash
   npm test -- test/unit/todo.controller.test.js
-  # atau
+  # or
   jest test/unit/todo.controller.test.js
   ```
-- Test unit untuk model:
+- Run unit tests for model:
   ```bash
   npm test -- test/unit/todo.model.test.js
-  # atau
+  # or
   jest test/unit/todo.model.test.js
   ```
 
 ### Integration Test
-- Test integrasi endpoint (route):
+- Run integration tests for API endpoints (routes):
   ```bash
   npm test -- test/integration/todo.route.test.js
-  # atau
+  # or
   jest test/integration/todo.route.test.js
   ```
 
-- Untuk menjalankan semua test sekaligus:
+- To run all tests:
   ```bash
   npm test
   ```
