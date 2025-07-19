@@ -70,9 +70,9 @@ PORT=3001
 You may set up tables manually or integrate with tools like `knex` or `sequelize`. For simplicity, assume you have a table like:
 
 ```sql
-CREATE TABLE todo (
+CREATE TABLE todos (
   id SERIAL PRIMARY KEY,
-  title TEXT NOT NULL,
+  title VARCHAR(100),
   completed BOOLEAN DEFAULT false
 );
 ```
