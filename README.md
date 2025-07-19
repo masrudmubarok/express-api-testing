@@ -105,13 +105,13 @@ npm test
 
 ## 📬 API Endpoints
 
-| Method | Endpoint      | Description          |
-|--------|---------------|----------------------|
-| GET    | /todos        | Get all todos        |
-| GET    | /todos/:id    | Get todo by ID       |
-| POST   | /todos        | Create new todo      |
-| PUT    | /todos/:id    | Update todo          |
-| DELETE | /todos/:id    | Delete todo          |
+| Method | Endpoint          | Description        |
+|--------|-------------------|--------------------|
+| GET    | /api/todos        | Get all todos      |
+| GET    | /api/todos/:id    | Get todo by ID     |
+| POST   | /api/todos        | Create new todo    |
+| PUT    | /api/todos/:id    | Update todo        |
+| DELETE | /api/todos/:id    | Delete todo        |
 
 ## 🧪 Postman Testing
 
