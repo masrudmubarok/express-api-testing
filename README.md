@@ -103,6 +103,35 @@ npm run test:integration
 npm test
 ```
 
+## 🧪 Testing Commands
+
+### Unit Test
+- Test unit untuk controller:
+  ```bash
+  npm test -- test/unit/todo.controller.test.js
+  # atau
+  jest test/unit/todo.controller.test.js
+  ```
+- Test unit untuk model:
+  ```bash
+  npm test -- test/unit/todo.model.test.js
+  # atau
+  jest test/unit/todo.model.test.js
+  ```
+
+### Integration Test
+- Test integrasi endpoint (route):
+  ```bash
+  npm test -- test/integration/todo.route.test.js
+  # atau
+  jest test/integration/todo.route.test.js
+  ```
+
+- Untuk menjalankan semua test sekaligus:
+  ```bash
+  npm test
+  ```
+
 ## 📬 API Endpoints
 
 | Method | Endpoint          | Description        |
