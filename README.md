@@ -20,12 +20,12 @@ express-api-testing/
 ├── controller/
 │   └── todo.controller.js
 ├── model/
-│   └── db.js
 │   └── todo.model.js
 ├── route/
 │   └── todo.routes.js
 ├── tests/
 │   ├── unit/
+|   |   └── todo.controller.test.js
 │   │   └── todo.model.test.js
 │   └── integration/
 │       └── todo.route.test.js
